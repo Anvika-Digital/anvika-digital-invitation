@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "¡Hola mundo!",
+    "subtitle": "Bienvenido a Next.js con soporte i18n."
+  },
+  "AboutPage": {
+    "title": "¡Hola mundo!",
+    "subtitle": "Esta es la página Acerca de, renderizada en el lado del servidor"
+  },
+  "LocaleSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, en {English} es {Español} other {Unknown}}"
+  },
+  "AdminPage": {
+    "title": "¡Hola mundo!",
+    "subtitle": "Esta es la página de administración"
+  },
+  "MerchantPage": {
+    "title": "¡Hola mundo!",
+    "subtitle": "Esta es la página de comerciantes"
+  }
+}
