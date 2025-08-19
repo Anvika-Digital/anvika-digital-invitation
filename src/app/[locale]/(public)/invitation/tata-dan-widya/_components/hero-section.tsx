@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function HeroSection() {
   return (
-    <section className="h-screen w-full bg-blue-200 py-24">
+    <section className="relative h-screen w-full bg-blue-200">
       <BaseContainer className="flex h-full justify-between">
         <div className="flex flex-col gap-y-6">
           <h1 className="mt-auto text-white">
