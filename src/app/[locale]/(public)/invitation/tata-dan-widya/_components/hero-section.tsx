@@ -13,8 +13,7 @@ export default function HeroSection() {
             The Wedding Of <br />
             <span className="text-5xl">
               Gus Tata
-              <br />
-              &Widya
+              <br />& Dayu Widya
             </span>
           </h1>
 

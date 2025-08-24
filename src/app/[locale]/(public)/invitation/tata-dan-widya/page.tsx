@@ -1,5 +1,6 @@
 import BaseContainer from '@/shared/components/base-container'
 import DateSection from './_components/date-section'
+import GallerySection from './_components/gallery-section'
 import HeroSection from './_components/hero-section'
 import StaticImageBackground from './_components/static-image-background'
 import WelcomeModal from './_components/welcome-modal'

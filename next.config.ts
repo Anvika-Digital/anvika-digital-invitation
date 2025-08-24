@@ -2,6 +2,14 @@ import { NextConfig } from 'next'
 import createNextIntlPlugin from 'next-intl/plugin'
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+      },
+    ],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
