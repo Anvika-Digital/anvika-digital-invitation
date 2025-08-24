@@ -59,15 +59,12 @@ importers:
       react-hook-form:
         specifier: ^7.59.0
         version: 7.62.0(react@19.1.1)
-<<<<<<< HEAD
-      swiper:
-        specifier: ^11.2.10
-        version: 11.2.10
-=======
       react-photo-album:
         specifier: ^3.1.0
         version: 3.1.0(@types/react@19.1.10)(react@19.1.1)
->>>>>>> feat/gallery-lightbox
+      swiper:
+        specifier: ^11.2.10
+        version: 11.2.10
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1

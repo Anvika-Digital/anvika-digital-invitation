@@ -1,5 +1,4 @@
 import React from 'react'
-import StaticImageBackground from './static-image-background'
 import BaseContainer from '@/shared/components/base-container'
 import Gallery from '@/shared/components/gallery'
 import { Photo } from 'react-photo-album'

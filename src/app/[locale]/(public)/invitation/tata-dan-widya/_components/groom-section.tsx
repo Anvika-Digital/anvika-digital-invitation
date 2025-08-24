@@ -32,9 +32,9 @@ export default function GroomSection() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-instagram-icon lucide-instagram"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -69,9 +69,9 @@ export default function GroomSection() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="lucide lucide-instagram-icon lucide-instagram"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
