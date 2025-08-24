@@ -10,9 +10,8 @@ export default function HeroSection() {
           <h1 className="mt-auto text-white">
             The Wedding Of <br />
             <span className="text-5xl">
-              Tata
-              <br />
-              &Widya
+              Gus Tata
+              <br />& Dayu Widya
             </span>
           </h1>
 
