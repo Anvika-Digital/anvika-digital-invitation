@@ -1,16 +1,18 @@
 import BaseContainer from '@/shared/components/base-container'
 import ScrollDownIcon from '@/shared/components/scroll-down-icon'
 import React from 'react'
+import SliderImageBackground from './slider-image-background'
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full bg-blue-200">
-      <BaseContainer className="flex h-full justify-between">
-        <div className="flex flex-col gap-y-6">
-          <h1 className="mt-auto text-white">
+    <section className="relative h-screen w-full">
+      <SliderImageBackground />
+      <BaseContainer className="relative z-10 flex h-full justify-between">
+        <div className="flex flex-col gap-y-6 text-white">
+          <h1 className="mt-auto">
             The Wedding Of <br />
             <span className="text-5xl">
-              Tata
+              Gus Tata
               <br />
               &Widya
             </span>

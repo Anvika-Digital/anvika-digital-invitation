@@ -1,0 +1,67 @@
+'use client'
+
+import { useRef } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, EffectFade } from 'swiper/modules'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+
+interface SwiperSlideshowProps {
+  slides?: Array<{
+    id: string
+    image: string
+  }>
+  autoplayDelay?: number
+  overlayOpacity?: string
+}
+
+const defaultSlides = [
+  { id: '1', image: '/static/slide-1.jpg' },
+  { id: '2', image: '/static/slide-2.jpg' },
+  { id: '3', image: '/static/slide-3.jpg' },
+  { id: '4', image: '/static/slide-4.jpg' },
+]
+
+export default function SwiperSlideshow({
+  slides = defaultSlides,
+  autoplayDelay = 3000,
+  overlayOpacity = 'opacity-30',
+}: SwiperSlideshowProps) {
+  const swiperRef = useRef<any>(null)
+
+  return (
+    <div className="pointer-events-none absolute inset-0 z-0 h-full w-full overflow-hidden">
+      <Swiper
+        ref={swiperRef}
+        modules={[Autoplay, EffectFade]}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        autoplay={{
+          delay: autoplayDelay,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        loop
+        speed={1500}
+        className="h-full w-full"
+      >
+        {slides.map((slide, idx) => (
+          <SwiperSlide key={slide.id}>
+            <div className="relative h-full w-full">
+              <div className="absolute inset-0 h-full w-full">
+                <img
+                  src={slide.image}
+                  alt="Background slide"
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className={`absolute inset-0 bg-black ${overlayOpacity}`} />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  )
+}
