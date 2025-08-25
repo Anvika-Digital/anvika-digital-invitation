@@ -9,6 +9,9 @@ import CeremonyLocationSection from './_components/ceremony-location-section'
 import RSVPSection from './_components/rsvp-section'
 import GallerySection from './_components/gallery-section'
 import LoveStorySection from './_components/love-story-section'
+import GiftSection from './_components/gift-section'
+import { Toaster } from '@/components/ui/sonner'
+import { Copy } from 'lucide-react'
 
 export default function InvitationPage() {
   return (
@@ -23,13 +26,12 @@ export default function InvitationPage() {
               <h2 className="text-xl uppercase">Undangan Pernikahan</h2>
               <h1 className="text-7xl">
                 Gus Tata & <br />
-                Widya
+                Dayu Widya
               </h1>
               <h3 className="text-lg font-bold uppercase">18 September 2025</h3>
             </div>
           </BaseContainer>
         </div>
-
         {/* Right Content */}
         <div className="relative h-screen w-full">
           <StaticImageBackground imageUrl="https://picsum.photos/id/122/1200/1500" />
@@ -42,8 +44,10 @@ export default function InvitationPage() {
             <RSVPSection />
             <GallerySection />
             <LoveStorySection />
+            <GiftSection />
           </div>
         </div>
+        <Toaster />
       </section>
     </>
   )

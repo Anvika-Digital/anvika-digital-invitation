@@ -15,7 +15,11 @@ export default function StaticImageBackground({
   return (
     <>
       <div role="modal" className="pointer-none absolute inset-0 z-0 h-full w-full">
-        <img src={imageUrl} alt="" className="h-screen w-full object-cover object-center" />
+        <img
+          src={imageUrl}
+          alt=""
+          className="h-full min-h-screen w-full object-cover object-center"
+        />
       </div>
 
       {overlay && (

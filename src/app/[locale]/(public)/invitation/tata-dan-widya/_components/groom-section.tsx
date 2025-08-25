@@ -10,7 +10,7 @@ export default function GroomSection() {
       <div className="relative -top-[1px] h-screen w-full bg-blue-200">
         <StaticImageBackground imageUrl="https://picsum.photos/id/10/1200/1500" overlay />
         <BaseContainer className="relative z-10 flex h-full w-full items-end justify-start">
-          <div className="space-y-2 text-white">
+          <div className="space-y-3 text-white">
             <h1 className="mb-4 font-bold uppercase underline">The Groom</h1>
             <h2 className="text-3xl font-bold">drg. Ida Bagus Septian Dwi Masta, S.K.G</h2>
             <h3 className="font-bold uppercase">Putra Kedua Dari</h3>
@@ -51,8 +51,8 @@ export default function GroomSection() {
       <div className="relative -top-[1px] h-screen w-full bg-red-200">
         <StaticImageBackground imageUrl="https://picsum.photos/id/11/1200/1500" overlay />
         <BaseContainer className="relative z-10 flex h-full w-full items-end justify-start">
-          <div className="space-y-2 text-white">
-            <h1 className="nt-bold mb-4 uppercase underline">The Bride</h1>
+          <div className="space-y-3 text-white">
+            <h1 className="mb-4 font-bold uppercase underline">The Bride</h1>
             <h2 className="text-3xl font-bold">Ida Ayu Kade Widya Pradnyaswari</h2>
             <h3 className="font-bold uppercase">Putri Kedua Dari</h3>
             <p>

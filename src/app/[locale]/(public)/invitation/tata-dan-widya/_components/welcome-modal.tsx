@@ -34,7 +34,7 @@ function WelcomeModalContent({
         <div className="relative z-20 flex h-full w-full flex-col items-center px-6 py-20">
           <h1 className="text-center text-sm text-white">
             The Wedding Of <br />
-            <span className="text-5xl">Tata & Widya</span>
+            <span className="text-5xl">Gus Tata & Dayu Widya</span>
           </h1>
 
           <div className="mt-auto space-y-4 text-center text-white">
