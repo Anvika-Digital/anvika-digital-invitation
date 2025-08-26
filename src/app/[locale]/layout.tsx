@@ -5,7 +5,6 @@ import { hasLocale, Locale, NextIntlClientProvider } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { ReactNode } from 'react'
-import { ThemeProvider } from '@/components/shared/theme-provider'
 
 type Props = {
   children: ReactNode

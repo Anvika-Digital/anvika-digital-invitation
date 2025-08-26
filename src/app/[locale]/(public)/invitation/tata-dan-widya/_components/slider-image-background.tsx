@@ -45,7 +45,7 @@ export default function SwiperSlideshow({
         }}
         loop
         speed={1500}
-        className="h-full w-full"
+        className="h-full w-full [&_.swiper-slide_img]:scale-105 [&_.swiper-slide-active_img]:scale-100"
       >
         {slides.map((slide, idx) => (
           <SwiperSlide key={slide.id}>
@@ -54,7 +54,7 @@ export default function SwiperSlideshow({
                 <img
                   src={slide.image}
                   alt="Background slide"
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center transition-transform duration-[5000ms] ease-in"
                 />
               </div>
               <div className={`absolute inset-0 bg-black ${overlayOpacity}`} />

@@ -19,7 +19,7 @@ export default function InvitationPage() {
       {/* <WelcomeModal guestName="John Doe" /> */}
       <section className="relative grid grid-cols-1 sm:grid-cols-[1fr_430px]">
         {/* Left Content for larger screen */}
-        <div className="relative hidden h-full w-full lg:block">
+        <div className="relative hidden h-full w-full sm:block">
           <StaticImageBackground imageUrl="/static/slide-4.jpg" overlay overlayClass="opacity-25" />
           <BaseContainer className="relative z-10 flex h-full w-full items-end justify-start text-white">
             <div className="space-y-2 text-white">
