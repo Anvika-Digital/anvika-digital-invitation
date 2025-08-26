@@ -67,7 +67,7 @@ export default function CountdownTimer({ targetDate, className = '' }: Countdown
         </div>
         <div className="text-center">
           <div className="text-4xl md:text-3xl">{formatNumber(timeLeft.hours)}</div>
-          <div className="text-muted-foreground mt-2 text-sm md:text-base">BULAN</div>
+          <div className="text-muted-foreground mt-2 text-sm md:text-base">JAM</div>
         </div>
         <div className="text-center">
           <div className="text-4xl md:text-3xl">{formatNumber(timeLeft.minutes)}</div>

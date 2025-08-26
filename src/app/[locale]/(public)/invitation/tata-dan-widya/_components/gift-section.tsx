@@ -56,8 +56,8 @@ export default function GiftSection() {
           </Alert>
 
           <div className="mt-auto space-y-2 text-sm text-white">
-            <p className="italic">
-              * Mohon untuk melakukan konfirmasi hadiah anda dengan mengirim bukti transfer/ resi
+            <p>
+              * Mohon untuk melakukan konfirmasi hadiah Anda dengan mengirim bukti transfer/ resi
               pengiriman kepada mempelai melalui personal message.
             </p>
           </div>

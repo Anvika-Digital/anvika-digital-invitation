@@ -12,14 +12,15 @@ import LoveStorySection from './_components/love-story-section'
 import GiftSection from './_components/gift-section'
 import { Toaster } from '@/components/ui/sonner'
 import { Copy } from 'lucide-react'
+import WishesSection from './_components/wishes-section'
 
 export default function InvitationPage() {
   return (
     <>
       {/* <WelcomeModal guestName="John Doe" /> */}
-      <section className="relative grid grid-cols-1 sm:grid-cols-[1fr_430px]">
+      <section className="relative grid grid-cols-1 lg:grid-cols-[1fr_430px] xl:grid-cols-[1fr_500px]">
         {/* Left Content for larger screen */}
-        <div className="relative hidden h-full w-full sm:block">
+        <div className="relative hidden h-full w-full lg:block">
           <StaticImageBackground imageUrl="/static/slide-4.jpg" overlay overlayClass="opacity-25" />
           <BaseContainer className="relative z-10 flex h-full w-full items-end justify-start text-white">
             <div className="space-y-2 text-white">
@@ -45,6 +46,7 @@ export default function InvitationPage() {
             <GallerySection />
             <LoveStorySection />
             <GiftSection />
+            <WishesSection />
           </div>
         </div>
         <Toaster />
