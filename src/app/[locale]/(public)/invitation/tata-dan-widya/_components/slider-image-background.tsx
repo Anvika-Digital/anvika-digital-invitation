@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade } from 'swiper/modules'
+import type { SwiperRef } from 'swiper/react'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -23,13 +24,12 @@ const defaultSlides = [
   { id: '3', image: '/static/slide-3.jpg' },
   { id: '4', image: '/static/slide-4.jpg' },
 ]
-
 export default function SwiperSlideshow({
   slides = defaultSlides,
   autoplayDelay = 3000,
   overlayOpacity = 'opacity-30',
 }: SwiperSlideshowProps) {
-  const swiperRef = useRef<any>(null)
+  const swiperRef = useRef<SwiperRef>(null)
 
   return (
     <div className="pointer-events-none absolute inset-0 z-0 h-full w-full overflow-hidden">

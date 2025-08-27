@@ -1,13 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { Photo, RenderImageContext, RenderImageProps, RowsPhotoAlbum } from 'react-photo-album'
+import { Photo, RowsPhotoAlbum } from 'react-photo-album'
 import 'react-photo-album/rows.css'
 import Lightbox from 'yet-another-react-lightbox'
+import { Download, Fullscreen } from 'yet-another-react-lightbox/plugins'
 import 'yet-another-react-lightbox/styles.css'
-import { Fullscreen } from 'yet-another-react-lightbox/plugins'
-import { Download } from 'yet-another-react-lightbox/plugins'
-import Image from 'next/image'
 
 type GalleryProps = {
   photos: Photo[]
