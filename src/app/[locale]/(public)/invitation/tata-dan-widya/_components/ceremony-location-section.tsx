@@ -42,7 +42,7 @@ export default function CeremonyLocationSection() {
             variant="outline"
             className="mt-2 w-full rounded-none bg-white/10 text-white uppercase hover:bg-white/30 hover:text-white"
           >
-            <Link href="https://maps.app.goo.gl/Ra7ABqCb6C8w7ZAV8?g_st=ipc" target="_blank">
+            <Link href="https://maps.app.goo.gl/Ti5oZyxMPWNukwVS9?g_st=ipc" target="_blank">
               Lihat Lokasi
             </Link>
           </Button>
