@@ -18,7 +18,7 @@ export default function StaticImageBackground({
         <img
           src={imageUrl}
           alt=""
-          className="h-full min-h-screen w-full object-cover object-center"
+          className="h-full min-h-screen w-full object-cover object-bottom"
         />
       </div>
 

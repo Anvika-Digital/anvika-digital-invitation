@@ -17,7 +17,7 @@ export default function WelcomeModal({ guestName }: WelcomeModalProps) {
     <AnimatePresence>
       {isOpen && (
         <motion.section
-          className="absolute inset-0 z-50 h-full w-full overflow-hidden bg-white"
+          className="absolute inset-0 z-50 h-dvh w-full overflow-hidden bg-white"
           initial={{ x: 0, opacity: 1 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: '-100%', opacity: 0 }}
@@ -26,7 +26,7 @@ export default function WelcomeModal({ guestName }: WelcomeModalProps) {
         >
           <div className="relative h-full w-full">
             {/* Image Container */}
-            <StaticImageBackground imageUrl="https://picsum.photos/id/122/1200/1500" overlay />
+            <StaticImageBackground imageUrl="/static/slide-4.jpg" overlay />
 
             {/* Welcome Message */}
             <BaseContainer className="relative z-20 flex h-full flex-col justify-between text-white">
