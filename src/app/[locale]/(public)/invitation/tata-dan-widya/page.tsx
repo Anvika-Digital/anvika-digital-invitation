@@ -28,7 +28,7 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
     <>
       {disableWelcomeModal ? null : <WelcomeModal guestName={searchQuery} />}
 
-      <section className="relative grid grid-cols-1 lg:grid-cols-[1fr_430px] xl:grid-cols-[1fr_500px]">
+      <section className="font-source-sans relative grid grid-cols-1 lg:grid-cols-[1fr_430px] xl:grid-cols-[1fr_500px]">
         {/* Left Content for larger screen */}
         <div className="relative hidden h-full w-full lg:block">
           <StaticImageBackground imageUrl="/static/slide-4.jpg" overlay overlayClass="opacity-25" />

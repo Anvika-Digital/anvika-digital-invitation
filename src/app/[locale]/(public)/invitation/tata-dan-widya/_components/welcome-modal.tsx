@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import React, { useState } from 'react'
 import StaticImageBackground from './static-image-background'
+import BaseContainer from '@/shared/components/base-container'
 
 type WelcomeModalProps = {
   guestName: string
@@ -24,27 +25,24 @@ function WelcomeModalContent({
   return (
     <section className="absolute inset-0 z-50 h-full w-full overflow-hidden bg-white">
       <div className="relative h-full w-full">
-        {/* Image Overlay */}
-        <div className="absolute inset-0 z-10 h-full w-full bg-black opacity-55" />
-
         {/* Image Container */}
-        <StaticImageBackground imageUrl="https://picsum.photos/id/122/1200/1500" />
+        <StaticImageBackground imageUrl="https://picsum.photos/id/122/1200/1500" overlay />
 
         {/* Welcome Message */}
-        <div className="relative z-20 flex h-full w-full flex-col items-center px-6 py-20">
-          <h1 className="text-center text-sm text-white">
-            The Wedding Of <br />
-            <span className="text-5xl">Gus Tata & Dayu Widya</span>
-          </h1>
+        <BaseContainer className="relative z-20 flex h-full flex-col justify-between text-white">
+          <div className="font-playfair space-y-2 text-center">
+            <h2 className="text-xl">The Wedding Of</h2>
+            <h1 className="text-5xl font-medium">Gus Tata & Dayu Widya</h1>
+          </div>
 
           <div className="mt-auto space-y-4 text-center text-white">
-            <p className="text-sm">Kepada Yth.</p>
-            <p className="mb-6 text-2xl">{guestName}</p>
+            <p className="font-source-sans">Kepada Yth.</p>
+            <p className="mb-6 text-3xl">{guestName}</p>
             <Button onClick={() => setIsOpen(false)} size="lg">
               Buka Undangan
             </Button>
           </div>
-        </div>
+        </BaseContainer>
       </div>
     </section>
   )
