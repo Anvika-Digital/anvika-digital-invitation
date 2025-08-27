@@ -35,11 +35,11 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
           <BaseContainer className="relative z-10 flex h-full w-full max-w-full items-end justify-start text-white">
             <div className="space-y-2 text-white">
               <h2 className="font-playfair text-xl font-medium uppercase">Undangan Pernikahan</h2>
-              <h1 className="font-playfair mb-4 text-7xl">
+              <h1 className="font-playfair mb-6 text-7xl">
                 Gus Tata & <br />
                 Dayu Widya
               </h1>
-              <h3 className="font-inter font-bold uppercase">18 September 2025</h3>
+              <h3 className="font-source-sans text-2xl font-medium uppercase">18 September 2025</h3>
             </div>
           </BaseContainer>
         </div>
