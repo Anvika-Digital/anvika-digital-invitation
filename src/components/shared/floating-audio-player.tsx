@@ -227,12 +227,7 @@ export default function FloatingAudioPlayer({
       <audio ref={audioRef} src={audioSrc} loop preload="metadata" muted={audioState.isMuted} />
 
       {/* Floating controls */}
-      <div
-        className={cn(
-          'h-h-dvh pointer-events-none sticky inset-0 z-50 flex w-full flex-col justify-end gap-2 p-4',
-          className
-        )}
-      >
+      <div className={cn('fixed bottom-4 left-4 z-50 flex flex-col gap-2', className)}>
         {/* Volume control (optional) */}
         {showVolumeControl && (
           <Button

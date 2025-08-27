@@ -45,9 +45,10 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
           </BaseContainer>
         </div>
         {/* Right Content */}
-        <div className="relative h-screen w-full">
+        <div className="relative h-dvh w-full">
           <StaticImageBackground imageUrl="https://picsum.photos/id/122/1200/1500" />
-          <div className="relative z-10 h-full max-h-screen w-full overflow-y-auto">
+          <FloatingAudioPlayer autoPlay audioSrc="/music/awal-kisah-selamanya.mp3" />
+          <div className="relative z-10 h-full max-h-dvh w-full overflow-y-auto">
             <HeroSection />
             <DateSection />
             <GroomSection />
@@ -60,7 +61,6 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
             <WishesSection />
             <FooterSection />
           </div>
-          <FloatingAudioPlayer autoPlay audioSrc="/music/awal-kisah-selamanya.mp3" />
         </div>
         <Toaster />
       </section>
