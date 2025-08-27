@@ -23,7 +23,7 @@ export default function GroomSection() {
 
             <Button variant="link" size="sm" className="px-0 text-white" asChild>
               <Link
-                href={`https://www.instagram.com/@ibseptiandwimasta`}
+                href={`https://www.instagram.com/ibseptiandwimasta`}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -63,7 +63,7 @@ export default function GroomSection() {
             </p>
 
             <Button variant="link" size="sm" className="px-0 text-white" asChild>
-              <Link href={`https://www.instagram.com/@iawidyapradnya`} target="_blank">
+              <Link href={`https://www.instagram.com/iawidyapradnya`} target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
