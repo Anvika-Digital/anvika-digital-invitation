@@ -229,7 +229,7 @@ export default function FloatingAudioPlayer({
       {/* Floating controls */}
       <div
         className={cn(
-          'pointer-events-none absolute inset-0 z-50 flex flex-col justify-end gap-2 p-4',
+          'h-h-dvh pointer-events-none sticky inset-0 z-50 flex w-full flex-col justify-end gap-2 p-4',
           className
         )}
       >
