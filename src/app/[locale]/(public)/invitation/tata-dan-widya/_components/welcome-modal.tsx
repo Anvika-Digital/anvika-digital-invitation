@@ -17,7 +17,7 @@ export default function WelcomeModal({ guestName }: WelcomeModalProps) {
     <AnimatePresence>
       {isOpen && (
         <motion.section
-          className="absolute inset-0 z-50 h-dvh w-full overflow-hidden bg-white"
+          className="absolute inset-0 z-[60] h-dvh w-full overflow-hidden bg-white"
           initial={{ x: 0, opacity: 1 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: '-100%', opacity: 0 }}

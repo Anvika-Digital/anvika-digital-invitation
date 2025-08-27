@@ -13,6 +13,7 @@ import StaticImageBackground from './_components/static-image-background'
 import WelcomeModal from './_components/welcome-modal'
 import WishesSection from './_components/wishes-section'
 import FooterSection from './_components/footer-section'
+import FloatingAudioPlayer from '@/components/shared/floating-audio-player'
 
 interface SearchParams {
   to?: string
@@ -59,6 +60,7 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
             <WishesSection />
             <FooterSection />
           </div>
+          <FloatingAudioPlayer autoPlay audioSrc="/music/awal-kisah-selamanya.mp3" />
         </div>
         <Toaster />
       </section>
