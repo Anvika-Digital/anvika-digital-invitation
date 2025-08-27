@@ -227,17 +227,22 @@ export default function FloatingAudioPlayer({
       <audio ref={audioRef} src={audioSrc} loop preload="metadata" muted={audioState.isMuted} />
 
       {/* Floating controls */}
-      <div className={cn('absolute bottom-4 left-4 z-50 flex flex-col gap-2', className)}>
+      <div
+        className={cn(
+          'pointer-events-none absolute inset-0 z-50 flex flex-col justify-end gap-2 p-4',
+          className
+        )}
+      >
         {/* Volume control (optional) */}
         {showVolumeControl && (
           <Button
             onClick={toggleMute}
             size="sm"
             variant="secondary"
-            className="h-6 w-6 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl"
+            className="pointer-events-auto h-8 w-8 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl"
             aria-label={audioState.isMuted ? 'Unmute audio' : 'Mute audio'}
           >
-            {audioState.isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+            {audioState.isMuted ? <VolumeX className="h-3 w-3" /> : <Volume2 className="h-3 w-3" />}
           </Button>
         )}
 
@@ -247,7 +252,7 @@ export default function FloatingAudioPlayer({
           size="lg"
           disabled={audioState.isLoading || audioState.hasError}
           className={cn(
-            'h-12 w-12 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl',
+            'pointer-events-auto h-12 w-12 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl sm:h-14 sm:w-14',
             audioState.isLoading && 'cursor-wait opacity-70',
             audioState.hasError && 'cursor-not-allowed opacity-50'
           )}
@@ -262,11 +267,11 @@ export default function FloatingAudioPlayer({
           }
         >
           {audioState.isLoading ? (
-            <div className="h-6 w-6 animate-spin rounded-full border-2 border-current border-t-transparent" />
+            <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent sm:h-6 sm:w-6" />
           ) : audioState.isPlaying ? (
-            <Pause className="h-6 w-6" />
+            <Pause className="h-5 w-5 sm:h-6 sm:w-6" />
           ) : (
-            <Play className="ml-0.5 h-6 w-6" />
+            <Play className="ml-0.5 h-5 w-5 sm:h-6 sm:w-6" />
           )}
         </Button>
       </div>
