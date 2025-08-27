@@ -81,7 +81,9 @@ export default function CustomScrollbar({ children, className }: CustomScrollbar
           animation: fadeInScrollbar 0.2s ease;
         }
       `}</style>
-      <div className={cn('ios-scrollbar', className)}>{children}</div>
+      <div className={cn('ios-scrollbar', className)} style={{ overscrollBehavior: 'contain' }}>
+        {children}
+      </div>
     </>
   )
 }
