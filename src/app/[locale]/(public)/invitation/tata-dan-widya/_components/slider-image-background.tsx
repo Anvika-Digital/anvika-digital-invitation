@@ -47,7 +47,7 @@ export default function SwiperSlideshow({
         speed={1500}
         className="h-full w-full [&_.swiper-slide_img]:scale-105 [&_.swiper-slide-active_img]:scale-100"
       >
-        {slides.map((slide, idx) => (
+        {slides.map(slide => (
           <SwiperSlide key={slide.id}>
             <div className="relative h-full w-full">
               <div className="absolute inset-0 h-full w-full">

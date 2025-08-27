@@ -13,30 +13,6 @@ type GalleryProps = {
   photos: Photo[]
 }
 
-function renderNextImage(
-  { alt = '', title, sizes }: RenderImageProps,
-  { photo, width, height }: RenderImageContext
-) {
-  return (
-    <div
-      style={{
-        width: '100%',
-        position: 'relative',
-        aspectRatio: `${width} / ${height}`,
-      }}
-    >
-      <Image
-        fill
-        src={photo}
-        alt={alt}
-        title={title}
-        sizes={sizes}
-        placeholder={'blurDataURL' in photo ? 'blur' : undefined}
-      />
-    </div>
-  )
-}
-
 export default function Gallery({ photos }: GalleryProps) {
   const [index, setIndex] = useState(-1)
 
@@ -47,7 +23,6 @@ export default function Gallery({ photos }: GalleryProps) {
         rowConstraints={{ maxPhotos: 2 }}
         targetRowHeight={250}
         spacing={4}
-        // render={{ image: renderNextImage }}
         onClick={({ index }) => setIndex(index)}
       />
 
