@@ -247,7 +247,7 @@ export default function FloatingAudioPlayer({
           size="lg"
           disabled={audioState.isLoading || audioState.hasError}
           className={cn(
-            'pointer-events-auto h-12 w-12 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl sm:h-14 sm:w-14',
+            'pointer-events-auto h-8 w-8 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl sm:h-12 sm:w-12',
             audioState.isLoading && 'cursor-wait opacity-70',
             audioState.hasError && 'cursor-not-allowed opacity-50'
           )}
