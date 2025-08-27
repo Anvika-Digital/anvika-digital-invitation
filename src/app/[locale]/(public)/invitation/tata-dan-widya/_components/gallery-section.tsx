@@ -105,10 +105,10 @@ const photos: Photo[] = [
 export default function GallerySection() {
   return (
     <section className="relative min-h-screen w-full">
-      {/* <StaticImageBackground imageUrl="https://picsum.photos/id/98/1200/1500" /> */}
+      <div className="absolute inset-0 z-0 h-full w-full bg-black/50" />
       <BaseContainer className="relative z-10 flex h-full w-full items-start">
         <div className="space-y-6 text-white">
-          <h1 className="text-center text-5xl leading-14 font-bold">Gallery</h1>
+          <h1 className="font-playfair text-center text-5xl leading-14 font-medium">Gallery</h1>
           <Gallery photos={photos} />
         </div>
       </BaseContainer>

@@ -30,7 +30,7 @@ export default function GiftSection() {
       <StaticImageBackground imageUrl="https://picsum.photos/id/98/1200/1500" overlay />
       <BaseContainer className="relative z-10 flex h-full w-full">
         <div className="w-full space-y-8 text-white">
-          <h1 className="w-full text-5xl font-bold">Wedding Gift</h1>
+          <h1 className="font-playfair w-full text-5xl font-medium">Wedding Gift</h1>
 
           <div className="space-y-4">
             {bankTransferOptions.map(bank => (

@@ -12,10 +12,7 @@ export default function CeremonyLocationSection() {
       <BaseContainer className="relative z-10 flex h-full w-full items-center">
         <div className="relative w-full space-y-4 px-6 py-8 text-white backdrop-blur-sm">
           <div className="pointer-events-none absolute inset-0 -z-10 h-full w-full bg-black opacity-10" />
-          <h1 className="mb-4 text-3xl">
-            Resepsi <br />
-            Pernikahan
-          </h1>
+          <h1 className="font-playfair mb-4 text-3xl">Resepsi Pernikahan</h1>
           <p className="flex items-center gap-x-2 font-bold">
             <span>
               <Calendar size="16" className="mb-0" />
@@ -43,7 +40,7 @@ export default function CeremonyLocationSection() {
             asChild
             size="lg"
             variant="outline"
-            className="mt-2 rounded-none bg-white/10 text-white uppercase hover:bg-white/30 hover:text-white"
+            className="mt-2 w-full rounded-none bg-white/10 text-white uppercase hover:bg-white/30 hover:text-white"
           >
             <Link href="https://maps.app.goo.gl/Ra7ABqCb6C8w7ZAV8?g_st=ipc" target="_blank">
               Lihat Lokasi

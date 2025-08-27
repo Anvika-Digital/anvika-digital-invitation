@@ -57,7 +57,7 @@ export default function CountdownTimer({ targetDate, className = '' }: Countdown
 
   return (
     <article className="text-white">
-      <h1 className="mb-4 font-bold uppercase">Counting Down to the Day</h1>
+      <h1 className="mb-4 font-medium uppercase">Counting Down to the Day</h1>
       <div
         className={cn('grid grid-cols-4 gap-4 font-mono text-2xl font-bold md:text-4xl', className)}
       >

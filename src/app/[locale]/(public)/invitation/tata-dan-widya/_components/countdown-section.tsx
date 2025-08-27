@@ -9,7 +9,10 @@ export default function CountdownSection() {
       <StaticImageBackground imageUrl="https://picsum.photos/id/98/1200/1500" overlay />
       <BaseContainer className="relative z-10 flex h-full w-full items-center justify-start">
         <div className="space-y-6 text-white">
-          <h1 className="text-8xl uppercase opacity-50">Save The Date</h1>
+          <h1 className="font-noto-serif text-8xl font-medium uppercase opacity-50">
+            Save <br />
+            The Date
+          </h1>
           <CountdownTimer targetDate="2025-09-18T00:00:00Z" />
         </div>
       </BaseContainer>
