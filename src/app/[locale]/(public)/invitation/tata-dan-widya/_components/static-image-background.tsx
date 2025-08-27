@@ -14,7 +14,7 @@ export default function StaticImageBackground({
 }: StaticImageBackgroundProps) {
   return (
     <>
-      <div role="modal" className="pointer-none absolute inset-0 z-0 h-full w-full">
+      <div role="modal" className="pointer-none bg-foreground absolute inset-0 z-0 h-full w-full">
         <img
           src={imageUrl}
           alt=""
