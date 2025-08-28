@@ -10,6 +10,7 @@ import 'swiper/css'
 import 'swiper/css/effect-fade'
 
 interface SwiperSlideshowProps {
+  lazy?: boolean
   slides?: Array<{
     id: string
     image: string
@@ -25,6 +26,7 @@ const defaultSlides = [
   { id: '4', image: '/static/slide-4.jpg' },
 ]
 export default function SwiperSlideshow({
+  lazy = false,
   slides = defaultSlides,
   autoplayDelay = 3000,
   overlayOpacity = 'opacity-30',
@@ -52,6 +54,7 @@ export default function SwiperSlideshow({
             <div className="relative h-full w-full">
               <div className="absolute inset-0 h-full w-full">
                 <img
+                  loading={lazy ? 'lazy' : 'eager'}
                   src={slide.image}
                   alt="Background slide"
                   className="h-full w-full object-cover object-center transition-transform duration-[5000ms] ease-in"

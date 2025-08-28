@@ -5,7 +5,7 @@ import BaseContainer from '@/shared/components/base-container'
 export default function DateSection() {
   return (
     <section className="relative -top-[1px] h-full w-full">
-      <StaticImageBackground imageUrl="/static/tata-widya/adat-6.webp" overlay />
+      <StaticImageBackground imageUrl="/static/tata-widya/adat-6.webp" overlay priority />
       <BaseContainer className="relative z-10 flex min-h-dvh w-full items-end">
         <div className="space-y-6 text-white">
           <h1 className="font-noto-serif text-8xl font-bold uppercase opacity-50">

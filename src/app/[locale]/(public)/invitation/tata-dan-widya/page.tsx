@@ -148,6 +148,7 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
           <StaticImageBackground
             imageUrl="/static/tata-widya/adat-2.webp"
             overlay
+            priority
             overlayClass="opacity-10"
           />
           <FloatingAudioPlayer autoPlay audioSrc="/music/awal-kisah-selamanya.mp3" />

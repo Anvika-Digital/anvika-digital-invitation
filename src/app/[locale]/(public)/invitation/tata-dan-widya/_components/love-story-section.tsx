@@ -4,7 +4,7 @@ import BaseContainer from '@/shared/components/base-container'
 
 export default function LoveStorySection() {
   return (
-    <section className="relative min-h-dvh w-full">
+    <section className="relative -top-[1px] min-h-dvh w-full">
       <StaticImageBackground
         imageUrl="/static/tata-widya/adat-1.webp"
         overlay

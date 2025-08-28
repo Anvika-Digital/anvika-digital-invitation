@@ -120,7 +120,7 @@ const photos: Photo[] = [
 
 export default function GallerySection() {
   return (
-    <section className="relative min-h-screen w-full">
+    <section className="relative -top-[1px] min-h-screen w-full">
       <div className="bg-foreground/50 absolute inset-0 z-0" />
       <BaseContainer className="relative z-10 flex h-full w-full items-start">
         <div className="space-y-6 text-white">
