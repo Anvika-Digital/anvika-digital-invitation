@@ -5,7 +5,7 @@ import WishesMessageBox from './wishes-message-box'
 export default function WishesSection() {
   return (
     <section className="relative -top-[1px] min-h-dvh w-full">
-      <div className="absolute inset-0 z-0 h-full w-full bg-black/50" />
+      <div className="bg-foreground/50 absolute inset-0 z-0 h-full w-full" />
       <BaseContainer className="relative z-10 space-y-8">
         <div className="space-y-4 text-white">
           <h1 className="font-playfair text-5xl font-medium">Ucapan & Doa</h1>

@@ -6,7 +6,7 @@ export default function FooterSection() {
   return (
     <section className="relative -top-[1px] h-screen w-full">
       <StaticImageBackground imageUrl="https://picsum.photos/id/100/1200/1500" />
-      <div className="absolute inset-0 z-10 h-full w-full bg-gradient-to-b from-transparent from-0% via-[var(--foreground)] via-50% to-[var(--foreground)] to-100%" />
+      <div className="absolute inset-0 z-10 h-full w-full bg-gradient-to-b from-transparent from-0% via-[var(--foreground)]/40 via-20% to-[var(--foreground)] to-100%" />
       <BaseContainer className="relative z-20 flex h-full w-full items-end">
         <footer className="w-full space-y-16 text-white">
           <div className="space-y-4 text-center">

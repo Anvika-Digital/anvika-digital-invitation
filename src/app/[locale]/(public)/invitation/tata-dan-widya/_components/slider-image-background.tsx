@@ -57,7 +57,7 @@ export default function SwiperSlideshow({
                   className="h-full w-full object-cover object-center transition-transform duration-[5000ms] ease-in"
                 />
               </div>
-              <div className={`absolute inset-0 bg-black ${overlayOpacity}`} />
+              <div className={`bg-foreground absolute inset-0 ${overlayOpacity}`} />
             </div>
           </SwiperSlide>
         ))}

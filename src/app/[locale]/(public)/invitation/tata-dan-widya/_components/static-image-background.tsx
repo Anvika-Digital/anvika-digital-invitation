@@ -21,7 +21,7 @@ export default function StaticImageBackground({
       {overlay && (
         <div
           className={cn(
-            'pointer-none absolute inset-0 z-10 h-full w-full bg-black opacity-50',
+            'pointer-none bg-foreground absolute inset-0 z-10 h-full w-full opacity-50',
             overlayClass
           )}
         />
