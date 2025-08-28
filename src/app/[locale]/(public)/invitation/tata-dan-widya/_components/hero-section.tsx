@@ -28,7 +28,7 @@ const slides = [
 
 export default function HeroSection() {
   return (
-    <section className="relative h-full w-full">
+    <section className="bg-foreground relative h-full w-full">
       <SliderImageBackground slides={slides} />
       <BaseContainer className="relative z-10 flex min-h-dvh justify-between">
         <div className="flex flex-col gap-y-6 text-white">
