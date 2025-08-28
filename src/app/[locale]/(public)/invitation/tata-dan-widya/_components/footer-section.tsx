@@ -23,7 +23,13 @@ export default function FooterSection() {
 
           <div className="flex flex-col items-center gap-y-2 text-center text-white">
             <p>Powered by</p>
-            <p>Anvika Digital Invitation</p>
+            <img
+              src="/static/anvika-logo.svg"
+              alt="Anvika Digital Invitation"
+              width={125}
+              height={35}
+              className="antialiased"
+            />
           </div>
         </footer>
       </BaseContainer>

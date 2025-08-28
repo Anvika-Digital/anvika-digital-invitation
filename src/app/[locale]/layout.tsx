@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
   // Open Graph metadata for social sharing
   openGraph: {
-    title: 'Anvika | Digital Invitation',
+    title: 'Anvika Digital Invitation',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     url: 'https://www.loremipsum.com',

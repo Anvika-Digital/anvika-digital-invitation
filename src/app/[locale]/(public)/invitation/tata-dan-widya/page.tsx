@@ -1,8 +1,11 @@
+import FloatingAudioPlayer from '@/components/shared/floating-audio-player'
 import { Toaster } from '@/components/ui/sonner'
 import BaseContainer from '@/shared/components/base-container'
+import { Metadata } from 'next'
 import CeremonyLocationSection from './_components/ceremony-location-section'
 import CountdownSection from './_components/countdown-section'
 import DateSection from './_components/date-section'
+import FooterSection from './_components/footer-section'
 import GallerySection from './_components/gallery-section'
 import GiftSection from './_components/gift-section'
 import GroomSection from './_components/groom-section'
@@ -12,8 +15,11 @@ import RSVPSection from './_components/rsvp-section'
 import StaticImageBackground from './_components/static-image-background'
 import WelcomeModal from './_components/welcome-modal'
 import WishesSection from './_components/wishes-section'
-import FooterSection from './_components/footer-section'
-import FloatingAudioPlayer from '@/components/shared/floating-audio-player'
+
+export const metadata: Metadata = {
+  title: 'Anvika Digital Invitation | Gus Tata dan Dayu Widya',
+  description: '...',
+}
 
 interface SearchParams {
   to?: string
