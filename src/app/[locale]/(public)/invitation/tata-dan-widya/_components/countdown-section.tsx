@@ -1,5 +1,4 @@
 import React from 'react'
-import StaticImageBackground from './static-image-background'
 import BaseContainer from '@/shared/components/base-container'
 import CountdownTimer from '@/components/shared/count-down'
 import SliderImageBackground from './slider-image-background'
