@@ -45,7 +45,7 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
           </BaseContainer>
         </div>
         {/* Right Content */}
-        <div className="relative h-dvh w-full">
+        <div className="relative">
           <StaticImageBackground imageUrl="https://picsum.photos/id/122/1200/1500" />
           <FloatingAudioPlayer autoPlay audioSrc="/music/awal-kisah-selamanya.mp3" />
           <div className="relative z-10 h-full max-h-dvh w-full overflow-y-auto">

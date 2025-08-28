@@ -7,9 +7,9 @@ import Link from 'next/link'
 export default function GroomSection() {
   return (
     <section>
-      <div className="relative -top-[1px] h-screen w-full bg-blue-200">
+      <div className="relative -top-[1px] h-full w-full bg-blue-200">
         <StaticImageBackground imageUrl="https://picsum.photos/id/10/1200/1500" overlay />
-        <BaseContainer className="relative z-10 flex h-full w-full items-end justify-start">
+        <BaseContainer className="relative z-10 flex min-h-dvh w-full items-end justify-start">
           <div className="space-y-3 text-white">
             <h1 className="font-noto-serif mb-4 font-bold uppercase">The Groom</h1>
             <h2 className="font-noto-serif text-3xl font-bold">
@@ -50,9 +50,9 @@ export default function GroomSection() {
         </BaseContainer>
       </div>
 
-      <div className="relative -top-[1px] h-screen w-full bg-red-200">
+      <div className="relative -top-[1px] h-full w-full bg-red-200">
         <StaticImageBackground imageUrl="https://picsum.photos/id/11/1200/1500" overlay />
-        <BaseContainer className="relative z-10 flex h-full w-full items-end justify-start">
+        <BaseContainer className="relative z-10 flex min-h-dvh w-full items-end justify-start">
           <div className="space-y-3 text-white">
             <h1 className="font-noto-serif mb-4 font-bold uppercase">The Bride</h1>
             <h2 className="font-noto-serif text-3xl font-bold">Ida Ayu Kade Widya Pradnyaswari</h2>

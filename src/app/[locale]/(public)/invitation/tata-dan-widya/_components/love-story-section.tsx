@@ -4,7 +4,7 @@ import BaseContainer from '@/shared/components/base-container'
 
 export default function LoveStorySection() {
   return (
-    <section className="relative min-h-screen w-full">
+    <section className="relative min-h-dvh w-full">
       <StaticImageBackground imageUrl="/static/slide-2.jpg" overlay />
       <BaseContainer className="relative z-10 flex h-full w-full items-start">
         <div className="space-y-8 text-white">

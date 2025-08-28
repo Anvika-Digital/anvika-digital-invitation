@@ -5,9 +5,9 @@ import SliderImageBackground from './slider-image-background'
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative h-full w-full">
       <SliderImageBackground />
-      <BaseContainer className="relative z-10 flex h-full justify-between">
+      <BaseContainer className="relative z-10 flex min-h-dvh justify-between">
         <div className="flex flex-col gap-y-6 text-white">
           <h1 className="font-playfair mt-auto">
             <span className="block text-lg">The Wedding Of </span>

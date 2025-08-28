@@ -7,9 +7,9 @@ import { Calendar, Clock, MapPin } from 'lucide-react'
 
 export default function CeremonyLocationSection() {
   return (
-    <section className="relative -top-[1px] h-screen w-full">
+    <section className="relative -top-[1px] h-full w-full">
       <SliderImageBackground />
-      <BaseContainer className="relative z-10 flex h-full w-full items-center">
+      <BaseContainer className="relative z-10 flex min-h-dvh w-full items-center">
         <div className="relative w-full space-y-4 px-6 py-8 text-white backdrop-blur-sm">
           <div className="pointer-events-none absolute inset-0 -z-10 h-full w-full bg-black opacity-10" />
           <h1 className="font-playfair mb-4 text-3xl">Resepsi Pernikahan</h1>

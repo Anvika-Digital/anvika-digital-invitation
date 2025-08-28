@@ -26,7 +26,7 @@ const bankTransferOptions: BankTransfer[] = [
 
 export default function GiftSection() {
   return (
-    <section className="relative -top-[1px] min-h-screen w-full">
+    <section className="relative -top-[1px] min-h-dvh w-full">
       <StaticImageBackground imageUrl="https://picsum.photos/id/98/1200/1500" overlay />
       <BaseContainer className="relative z-10 flex h-full w-full">
         <div className="w-full space-y-8 text-white">

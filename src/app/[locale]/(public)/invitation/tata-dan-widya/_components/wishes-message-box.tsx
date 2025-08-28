@@ -78,8 +78,8 @@ const dummyMessages = [
 
 export default function WishesMessageBox() {
   return (
-    <CustomScrollbar className="h-[calc(80vh)] w-full overflow-y-auto">
-      <div className="h-full w-full space-y-4 px-3 py-6">
+    <CustomScrollbar className="h-[500px] w-full overflow-y-auto">
+      <div className="h-full w-full space-y-4 px-2 py-6">
         {dummyMessages.map(msg => (
           <ChatBubble key={msg.id} {...msg} />
         ))}

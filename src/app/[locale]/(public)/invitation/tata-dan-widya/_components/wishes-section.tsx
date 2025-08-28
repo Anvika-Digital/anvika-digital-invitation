@@ -4,7 +4,7 @@ import WishesMessageBox from './wishes-message-box'
 
 export default function WishesSection() {
   return (
-    <section className="relative -top-[1px] min-h-screen w-full">
+    <section className="relative -top-[1px] min-h-dvh w-full">
       <div className="absolute inset-0 z-0 h-full w-full bg-black/50" />
       <BaseContainer className="relative z-10 space-y-8">
         <div className="space-y-4 text-white">
@@ -13,7 +13,9 @@ export default function WishesSection() {
         </div>
 
         <WishesForm />
-        <WishesMessageBox />
+        <div className="px-4">
+          <WishesMessageBox />
+        </div>
       </BaseContainer>
     </section>
   )

@@ -63,9 +63,9 @@ export default function RSVPSection() {
   }
 
   return (
-    <section className="relative -top-[1px] h-screen w-full">
+    <section className="relative -top-[1px] h-full w-full">
       <StaticImageBackground imageUrl="/static/slide-2.jpg" overlay />
-      <BaseContainer className="relative z-10 flex h-full w-full items-center">
+      <BaseContainer className="relative z-10 flex min-h-dvh w-full items-center">
         <div className="relative w-full space-y-4 bg-white/15 px-6 py-8 text-white backdrop-blur-sm">
           <h1 className="font-playfair mb-4 text-3xl">RSVP</h1>
           <p className="text-sm text-white">

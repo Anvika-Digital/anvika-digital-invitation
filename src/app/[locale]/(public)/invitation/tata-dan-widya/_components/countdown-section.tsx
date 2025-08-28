@@ -5,9 +5,9 @@ import CountdownTimer from '@/components/shared/count-down'
 
 export default function CountdownSection() {
   return (
-    <section className="relative -top-[1px] h-screen w-full">
+    <section className="relative -top-[1px] h-full w-full">
       <StaticImageBackground imageUrl="https://picsum.photos/id/98/1200/1500" overlay />
-      <BaseContainer className="relative z-10 flex h-full w-full items-center justify-start">
+      <BaseContainer className="relative z-10 flex min-h-dvh w-full items-center justify-start">
         <div className="space-y-6 text-white">
           <h1 className="font-noto-serif text-8xl font-medium uppercase opacity-50">
             Save <br />
