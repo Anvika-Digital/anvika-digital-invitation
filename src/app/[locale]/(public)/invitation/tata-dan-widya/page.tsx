@@ -17,8 +17,97 @@ import WelcomeModal from './_components/welcome-modal'
 import WishesSection from './_components/wishes-section'
 
 export const metadata: Metadata = {
-  title: 'Anvika Digital Invitation | Gus Tata dan Dayu Widya',
-  description: '...',
+  title: 'Anvika | Gus Tata & Dayu Widya - 18 September 2025',
+  description:
+    'Kami dengan penuh kebahagiaan mengundang Anda untuk hadir dalam acara pernikahan Ida Bagus Septian Dwi Masta (Gus Tata) dan Ida Ayu Kade Widya Pradnyaswari (Dayu Widya) pada 18 September 2025. Saksikan momen bahagia kami bersama keluarga dan sahabat tercinta.',
+  keywords: [
+    'undangan pernikahan',
+    'wedding invitation',
+    'Gus Tata Dayu Widya',
+    'Ida Bagus Septian Dwi Masta',
+    'Ida Ayu Kade Widya Pradnyaswari',
+    'pernikahan bali',
+    'september 2025',
+    'digital invitation',
+    'anvika digital',
+  ],
+  authors: [{ name: 'Anvika Digital Invitation' }],
+  creator: 'Anvika Digital Invitation',
+  publisher: 'Anvika Digital Invitation',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  category: 'Wedding',
+  classification: 'Wedding Invitation',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'id_ID',
+    alternateLocale: ['en_US'],
+    title: 'Undangan Pernikahan Gus Tata & Dayu Widya - 18 September 2025',
+    description:
+      'Kami dengan penuh kebahagiaan mengundang Anda untuk hadir dalam acara pernikahan Ida Bagus Septian Dwi Masta (Gus Tata) dan Ida Ayu Kade Widya Pradnyaswari (Dayu Widya) pada 18 September 2025.',
+    siteName: 'Anvika Digital Invitation',
+    images: [
+      {
+        url: '/static/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Undangan Pernikahan Gus Tata & Dayu Widya',
+        type: 'image/jpeg',
+      },
+      {
+        url: '/static/slide-4.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Wedding Photo Gus Tata & Dayu Widya',
+        type: 'image/jpeg',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Undangan Pernikahan Gus Tata & Dayu Widya - 18 September 2025',
+    description:
+      'Kami mengundang Anda dalam acara pernikahan Gus Tata & Dayu Widya pada 18 September 2025. Saksikan momen bahagia kami!',
+    images: ['/static/og-image.jpg'],
+    creator: '@anvika_digital',
+    site: '@anvika_digital',
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
+  alternates: {
+    canonical: '/invitation/tata-dan-widya',
+    languages: {
+      'id-ID': '/id/invitation/tata-dan-widya',
+      'en-US': '/en/invitation/tata-dan-widya',
+    },
+  },
+  other: {
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+    'apple-mobile-web-app-title': 'Gus Tata & Dayu Widya Wedding',
+    'mobile-web-app-capable': 'yes',
+    'theme-color': '#ffffff',
+    'msapplication-TileColor': '#ffffff',
+    'msapplication-config': '/browserconfig.xml',
+  },
 }
 
 interface SearchParams {
