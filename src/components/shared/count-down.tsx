@@ -63,19 +63,19 @@ export default function CountdownTimer({ targetDate, className = '' }: Countdown
       >
         <div className="text-center">
           <div className="text-4xl md:text-3xl">{formatNumber(timeLeft.days)}</div>
-          <div className="text-muted-foreground mt-2 text-sm md:text-base">HARI</div>
+          <div className="mt-2 text-sm text-white/70 md:text-base">HARI</div>
         </div>
         <div className="text-center">
           <div className="text-4xl md:text-3xl">{formatNumber(timeLeft.hours)}</div>
-          <div className="text-muted-foreground mt-2 text-sm md:text-base">JAM</div>
+          <div className="mt-2 text-sm text-white/70 md:text-base">JAM</div>
         </div>
         <div className="text-center">
           <div className="text-4xl md:text-3xl">{formatNumber(timeLeft.minutes)}</div>
-          <div className="text-muted-foreground mt-2 text-sm md:text-base">MENIT</div>
+          <div className="mt-2 text-sm text-white/70 md:text-base">MENIT</div>
         </div>
         <div className="text-center">
           <div className="text-4xl md:text-3xl">{formatNumber(timeLeft.seconds)}</div>
-          <div className="text-muted-foreground mt-2 text-sm md:text-base">DETIK</div>
+          <div className="mt-2 text-sm text-white/70 md:text-base">DETIK</div>
         </div>
       </div>
     </article>

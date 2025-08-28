@@ -24,7 +24,7 @@ const slides = [
 
 export default function CountdownSection() {
   return (
-    <section className="relative -top-[1px] h-full w-full">
+    <section className="bg-foreground relative -top-[1px] h-full w-full">
       <SliderImageBackground slides={slides} overlayOpacity="opacity-50" />
       <BaseContainer className="relative z-10 flex min-h-dvh w-full items-center justify-start">
         <div className="space-y-6 text-white">
