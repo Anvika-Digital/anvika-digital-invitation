@@ -26,7 +26,7 @@ export default function WelcomeModal({ guestName }: WelcomeModalProps) {
         >
           <div className="relative h-full w-full">
             {/* Image Container */}
-            <StaticImageBackground imageUrl="/static/tata-widya/adat-3.webp" overlay priority />
+            <StaticImageBackground imageUrl="/static/tata-widya/adat-7.webp" overlay priority />
 
             {/* Welcome Message */}
             <BaseContainer className="relative z-20 flex h-full flex-col justify-between text-white">
