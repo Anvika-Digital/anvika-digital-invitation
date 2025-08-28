@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Photo, RowsPhotoAlbum } from 'react-photo-album'
+import SSR from 'react-photo-album/ssr'
 import 'react-photo-album/rows.css'
 import Lightbox from 'yet-another-react-lightbox'
 import { Download, Fullscreen } from 'yet-another-react-lightbox/plugins'
@@ -16,13 +17,15 @@ export default function Gallery({ photos }: GalleryProps) {
 
   return (
     <>
-      <RowsPhotoAlbum
-        photos={photos}
-        rowConstraints={{ maxPhotos: 2 }}
-        targetRowHeight={250}
-        spacing={4}
-        onClick={({ index }) => setIndex(index)}
-      />
+      <SSR breakpoints={[300, 600, 900, 1200]}>
+        <RowsPhotoAlbum
+          photos={photos}
+          rowConstraints={{ maxPhotos: 2 }}
+          targetRowHeight={250}
+          spacing={4}
+          onClick={({ index }) => setIndex(index)}
+        />
+      </SSR>
 
       <Lightbox
         slides={photos}
