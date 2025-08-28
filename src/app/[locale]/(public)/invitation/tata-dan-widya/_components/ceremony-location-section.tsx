@@ -1,14 +1,13 @@
-import React from 'react'
-import BaseContainer from '@/shared/components/base-container'
-import SliderImageBackground from './slider-image-background'
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+import BaseContainer from '@/shared/components/base-container'
 import { Calendar, Clock, MapPin } from 'lucide-react'
+import Link from 'next/link'
+import StaticImageBackground from './static-image-background'
 
 export default function CeremonyLocationSection() {
   return (
     <section className="relative -top-[1px] h-full w-full">
-      <SliderImageBackground />
+      <StaticImageBackground imageUrl="/static/tata-widya/casual-10.webp" overlay />
       <BaseContainer className="relative z-10 flex min-h-dvh w-full items-center">
         <div className="relative w-full space-y-4 px-6 py-8 text-white backdrop-blur-sm">
           <div className="bg-foreground pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-10" />

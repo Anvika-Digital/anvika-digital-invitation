@@ -8,7 +8,7 @@ export default function GroomSection() {
   return (
     <section>
       <div className="relative -top-[1px] h-full w-full bg-blue-200">
-        <StaticImageBackground imageUrl="https://picsum.photos/id/10/1200/1500" overlay />
+        <StaticImageBackground imageUrl="/static/tata-widya/adat-profil-tata.webp" overlay />
         <BaseContainer className="relative z-10 flex min-h-dvh w-full items-end justify-start">
           <div className="space-y-3 text-white">
             <h1 className="font-noto-serif mb-4 font-bold uppercase">The Groom</h1>
@@ -51,7 +51,7 @@ export default function GroomSection() {
       </div>
 
       <div className="relative -top-[1px] h-full w-full bg-red-200">
-        <StaticImageBackground imageUrl="https://picsum.photos/id/11/1200/1500" overlay />
+        <StaticImageBackground imageUrl="/static/tata-widya/adat-profil-widya.webp" overlay />
         <BaseContainer className="relative z-10 flex min-h-dvh w-full items-end justify-start">
           <div className="space-y-3 text-white">
             <h1 className="font-noto-serif mb-4 font-bold uppercase">The Bride</h1>

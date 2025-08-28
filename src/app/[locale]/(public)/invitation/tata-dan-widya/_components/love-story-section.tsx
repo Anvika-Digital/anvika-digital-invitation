@@ -5,7 +5,11 @@ import BaseContainer from '@/shared/components/base-container'
 export default function LoveStorySection() {
   return (
     <section className="relative min-h-dvh w-full">
-      <StaticImageBackground imageUrl="/static/slide-2.jpg" overlay />
+      <StaticImageBackground
+        imageUrl="/static/tata-widya/adat-1.webp"
+        overlay
+        overlayClass="opacity-60"
+      />
       <BaseContainer className="relative z-10 flex h-full w-full items-start">
         <div className="space-y-8 text-white">
           <h1 className="font-playfair text-5xl font-medium">Kisah Cinta</h1>

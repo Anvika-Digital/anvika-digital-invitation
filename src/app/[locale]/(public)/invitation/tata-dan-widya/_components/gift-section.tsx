@@ -27,7 +27,7 @@ const bankTransferOptions: BankTransfer[] = [
 export default function GiftSection() {
   return (
     <section className="relative -top-[1px] min-h-dvh w-full">
-      <StaticImageBackground imageUrl="https://picsum.photos/id/98/1200/1500" overlay />
+      <StaticImageBackground imageUrl="/static/tata-widya/adat-7.webp" overlay />
       <BaseContainer className="relative z-10 flex h-full w-full">
         <div className="w-full space-y-8 text-white">
           <h1 className="font-playfair w-full text-5xl font-medium">Wedding Gift</h1>

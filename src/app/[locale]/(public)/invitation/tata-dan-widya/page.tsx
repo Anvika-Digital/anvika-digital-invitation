@@ -127,7 +127,11 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
       <section className="font-source-sans relative grid grid-cols-1 lg:grid-cols-[1fr_430px] xl:grid-cols-[1fr_500px]">
         {/* Left Content for larger screen */}
         <div className="relative hidden h-full w-full lg:block">
-          <StaticImageBackground imageUrl="/static/slide-4.jpg" overlay overlayClass="opacity-25" />
+          <StaticImageBackground
+            imageUrl="/static/tata-widya/adat-10.webp"
+            overlay
+            overlayClass="opacity-25"
+          />
           <BaseContainer className="relative z-10 flex h-full w-full max-w-full items-end justify-start text-white">
             <div className="space-y-2 text-white">
               <h2 className="font-playfair text-xl font-medium uppercase">Undangan Pernikahan</h2>
@@ -141,7 +145,11 @@ export default async function InvitationPage({ searchParams }: { searchParams: S
         </div>
         {/* Right Content */}
         <div className="relative">
-          <StaticImageBackground imageUrl="https://picsum.photos/id/122/1200/1500" />
+          <StaticImageBackground
+            imageUrl="/static/tata-widya/adat-2.webp"
+            overlay
+            overlayClass="opacity-10"
+          />
           <FloatingAudioPlayer autoPlay audioSrc="/music/awal-kisah-selamanya.mp3" />
           <div className="relative z-10 h-full max-h-dvh w-full overflow-y-auto">
             <HeroSection />
