@@ -1,9 +1,8 @@
 'use server'
 
 import { RSVPFormSchema } from '@/shared/schema/rsvp'
-import { RSVP, RSVPInput } from '@/types/rsvp'
+import { RSVPInput } from '@/types/rsvp'
 import { supabase } from '@/lib/supabase'
-import z from 'zod'
 
 type ActionResult =
   | { ok: true; message: string }
