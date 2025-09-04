@@ -30,7 +30,7 @@ import { toast } from 'sonner'
 import Cookies from 'js-cookie'
 
 const COOKIE_NAME = 'RSVPSubmit'
-const COOKIE_EXPIRY_DAYS = 30
+const COOKIE_EXPIRY_DAYS = 3
 const INVITATION_ID = 'tata-dan-widya'
 
 const confirmationOptions = [
