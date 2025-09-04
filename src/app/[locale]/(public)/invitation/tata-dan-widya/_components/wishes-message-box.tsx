@@ -77,6 +77,17 @@ type ChatBubbleProps = {
 }
 
 function ChatBubble({ name, message, createdAt }: ChatBubbleProps) {
+  const formattedDateTime = `${createdAt.toLocaleDateString('id-ID', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })} - ${createdAt.toLocaleTimeString('id-ID', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  })}`
+
   return (
     <li className="flex flex-col items-end gap-y-2">
       <motion.div
@@ -111,7 +122,7 @@ function ChatBubble({ name, message, createdAt }: ChatBubbleProps) {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.4 }}
         >
-          {createdAt.toDateString()}
+          {formattedDateTime}
         </motion.p>
       </motion.div>
     </li>
