@@ -62,18 +62,11 @@ export const metadata: Metadata = {
     siteName: 'Anvika Digital Invitation',
     images: [
       {
-        url: '/static/og-image.jpg',
-        width: 1200,
-        height: 630,
+        url: '/static/tata-widya/adat-3.webp',
+        width: 1920,
+        height: 1280,
         alt: 'Undangan Pernikahan Gus Tata & Dayu Widya',
-        type: 'image/jpeg',
-      },
-      {
-        url: '/static/slide-4.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Wedding Photo Gus Tata & Dayu Widya',
-        type: 'image/jpeg',
+        type: 'image/webp',
       },
     ],
   },
@@ -82,9 +75,9 @@ export const metadata: Metadata = {
     title: 'Undangan Pernikahan Gus Tata & Dayu Widya - 18 September 2025',
     description:
       'Kami mengundang Anda dalam acara pernikahan Gus Tata & Dayu Widya pada 18 September 2025. Saksikan momen bahagia kami!',
-    images: ['/static/og-image.jpg'],
-    creator: '@anvika_digital',
-    site: '@anvika_digital',
+    images: ['/static/tata-widya/adat-3.webp'],
+    creator: '@anvika.id',
+    site: '@anvika.id',
   },
   viewport: {
     width: 'device-width',
