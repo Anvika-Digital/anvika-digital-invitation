@@ -18,26 +18,26 @@ export type Database = {
         Row: {
           created_at: string
           deleted_at: string | null
-          id: number
+          id: string
           invitation_id: string
-          message: string | null
-          name: string | null
+          message: string
+          name: string
         }
         Insert: {
           created_at?: string
           deleted_at?: string | null
-          id?: number
+          id?: string
           invitation_id: string
-          message?: string | null
-          name?: string | null
+          message: string
+          name: string
         }
         Update: {
           created_at?: string
           deleted_at?: string | null
-          id?: number
+          id?: string
           invitation_id?: string
-          message?: string | null
-          name?: string | null
+          message?: string
+          name?: string
         }
         Relationships: []
       }

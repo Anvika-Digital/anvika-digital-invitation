@@ -4,7 +4,7 @@ export type Message = {
   name: string
   message: string
   created_at: string
-  deleted_at?: string
+  deleted_at?: string | null
 }
 
 export type MessageInput = {
