@@ -3,6 +3,8 @@
 import { RSVPFormSchema } from '@/shared/schema/rsvp'
 import { RSVPInput } from '@/types/rsvp'
 import { supabase } from '@/lib/supabase'
+import { MessageInput } from '@/types/message'
+import { messageFormSchema } from '@/shared/schema/message'
 
 type ActionResult =
   | { ok: true; message: string }
@@ -53,6 +55,59 @@ export async function submitRSVP(input: RSVPInput): Promise<ActionResult> {
     }
   } catch (err) {
     console.error('Unexpected error submitting RSVP:', err)
+    // Catch unexpected server errors in a safe, serializable way
+    return {
+      ok: false,
+      fieldErrors: {},
+      formError: 'Terjadi kesalahan di server. Coba beberapa saat lagi.',
+    }
+  }
+}
+
+export async function submitMessage(input: MessageInput): Promise<ActionResult> {
+  // Validate on the server
+  const parsed = messageFormSchema.safeParse(input)
+  if (!parsed.success) {
+    return {
+      ok: false,
+      fieldErrors: parsed.error.flatten().fieldErrors,
+    }
+  }
+
+  try {
+    // Prepare message data for database
+    const messageData: MessageInput = {
+      invitation_id: parsed.data.invitation_id,
+      name: parsed.data.name,
+      message: parsed.data.message,
+    }
+
+    // Insert message into Supabase
+    const { data, error } = await supabase.from('messages').insert([messageData]).select()
+
+    if (error) {
+      console.error('Supabase error:', error)
+      return {
+        ok: false,
+        fieldErrors: {},
+        formError: 'Gagal menyimpan pesan. Silakan coba lagi.',
+      }
+    }
+
+    if (!data || data.length === 0) {
+      return {
+        ok: false,
+        fieldErrors: {},
+        formError: 'Gagal menyimpan pesan. Silakan coba lagi.',
+      }
+    }
+
+    return {
+      ok: true,
+      message: `Terima kasih ${parsed.data.name}! Pesan Anda sudah kami terima`,
+    }
+  } catch (err) {
+    console.error('Unexpected error submitting message:', err)
     // Catch unexpected server errors in a safe, serializable way
     return {
       ok: false,
