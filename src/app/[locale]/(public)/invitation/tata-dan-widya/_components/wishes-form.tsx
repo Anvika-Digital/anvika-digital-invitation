@@ -21,7 +21,7 @@ import { toast } from 'sonner'
 import z from 'zod'
 
 const COOKIE_NAME = 'MessageSubmit'
-const COOKIE_EXPIRY_DAYS = 7 // Increased from 1 day to 7 days
+const COOKIE_EXPIRY_DAYS = 1
 const INVITATION_ID = 'tata-dan-widya'
 
 interface CookieData {
